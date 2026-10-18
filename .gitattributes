@@ -1,0 +1,6 @@
+# Normalize line endings for source text; keep binary fixtures untouched.
+* text=auto eol=lf
+
+*.ttf binary
+*.png binary
+*.jpg binary

@@ -1,0 +1,13 @@
+# Copy this file to `.cargo/config.toml` if you build with MinGW instead of
+# MSVC (for example when Visual Studio has no Windows SDK installed), then
+# adjust the linker path to your MinGW-w64 installation.
+#
+#   rustup target add x86_64-pc-windows-gnu
+#
+# The resulting binaries land in `target/x86_64-pc-windows-gnu/`.
+
+[build]
+target = "x86_64-pc-windows-gnu"
+
+[target.x86_64-pc-windows-gnu]
+linker = "C:/path/to/mingw64/bin/x86_64-w64-mingw32-gcc.exe"

@@ -1,0 +1,25 @@
+[package]
+name = "ttf2svg"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.85"
+description = "Convert TrueType/OpenType glyphs to SVG files, and SVG glyphs to C mesh sources"
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+documentation = "https://docs.rs/ttf2svg"
+keywords = ["font", "svg", "ttf", "mesh", "cli"]
+categories = ["command-line-utilities", "graphics"]
+exclude = ["fuzz/", "examples/", ".github/", ".cargo/"]
+
+[dependencies]
+anyhow = "1"
+clap = { version = "4.5", features = ["derive"] }
+earcutr = "0.4"
+roxmltree = "0.20"
+thiserror = "2"
+ttf-parser = "0.25"
+
+[dev-dependencies]
+assert_cmd = "2.1"
+predicates = "3"
+tempfile = "3"
